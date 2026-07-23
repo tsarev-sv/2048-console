@@ -43,7 +43,6 @@ void Game::run() {
 			cout << "\nYOU WIN! Score: " << board.getScore() << endl;
 			gameOver = true;
 			_getch();
-			break;
 		}
 	}
 	if (!win) {
