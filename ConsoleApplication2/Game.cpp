@@ -41,7 +41,9 @@ void Game::run() {
 			render.renderer(board);
 			recordmanager.saveRecord(board.getScore());
 			cout << "\nYOU WIN! Score: " << board.getScore() << endl;
+			gameOver = true;
 			_getch();
+			break;
 		}
 	}
 	if (!win) {
